@@ -9,16 +9,8 @@
 </head>
 <body>
     <h1>Team Player</h1>
-    <form action="#" method="post" name="mint-info">
-        <label for="itName">아이템 이름</label>
-        <input type="text" name="itName" required>
-        <label for="itPrice">아이템 가격</label>
-        <input type="number" name="itPrice" min="0" max="1" step="0.0001" required>
-        <label for="walAdr">지갑주소</label>
-        <input type="text" name="walAdr" required>
-        <label for="itAdr">아이템주소</label>
-        <input type="url" name="itAdr" required>
-        <button type="submit">민팅</button>
+    <form action="/form.htm" method="get" name="mint-info">
+        <button>메타마스크 지갑연동하기</button>
     </form>
     <script src="https://cdn.jsdelivr.net/npm/loom-js@1.15.0/dist/loom.umd.js"></script>
     <script src="./index.js" target="_blank"></script>
