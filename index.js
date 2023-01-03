@@ -1,7 +1,7 @@
 const initialize = () => {
   //Basic Actions Section
   const connectBtn = document.getElementById('connectButton');
-
+  const getAccountBtn = document.getElementById('getWalletAddress');
   //Created check function to see if the MetaMask extension is installed
   const isMetaMaskInstalled = () => {
     //Have to check the ethereum binding on the window object to see if it's installed
@@ -14,11 +14,22 @@ const initialize = () => {
     // Will open the MetaMask UI
     // You should disable this button while the request is pending!
     await ethereum.request({ method: 'eth_requestAccounts' });
+    connectBtn.disabled = true;
+    connectBtn.innerText = "연결되었습니다.";
   } catch (error) {
     console.error(error);
   }
 };
-
+  const getAccount = async () =>{
+    try {
+      const accounts = await ethereum.request({ method: 'eth_accounts'});
+      getAccountBtn.value = accounts[0];
+      getAccountBtn.disabled = true;
+    }
+    catch(error){
+      console.error(error);
+    }
+  }
   const MetaMaskClientCheck = () => {
     //Now we check to see if MetaMask is installed
     if (!isMetaMaskInstalled()) {
@@ -33,5 +44,6 @@ const initialize = () => {
     }
   };
   MetaMaskClientCheck();
+  getAccountBtn.addEventListener("click",getAccount);
 }
 window.addEventListener('DOMContentLoaded', initialize);
