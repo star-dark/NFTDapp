@@ -27,7 +27,7 @@ const initialize = () => {
       connectBtn.disabled = true;
     } else {
       //If it is installed we change our button text
-      connectBtn.innerText = 'Connect';
+      connectBtn.innerText = '메타마스크 지갑연동하기';
       connectBtn.onclick = onClickConnect;
       connectBtn.disabled = false;
     }
