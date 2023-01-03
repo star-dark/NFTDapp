@@ -28,8 +28,8 @@ const initialize = () => {
     } else {
       //If it is installed we change our button text
       connectBtn.innerText = 'Connect';
-      onboardButton.onclick = onClickConnect;
-      onboardButton.disabled = false;
+      connectBtn.onclick = onClickConnect;
+      connectBtn.disabled = false;
     }
   };
   MetaMaskClientCheck();
