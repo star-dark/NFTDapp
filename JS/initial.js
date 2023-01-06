@@ -2,6 +2,7 @@ const initialize = () => {
   //Basic Actions Section
   const connectBtn = document.getElementById('connectButton');
   const getAccountBtn = document.getElementById('getWalletAddress');
+  const putAccount = document.getElementById('addressInput');
   //Created check function to see if the MetaMask extension is installed
   const isMetaMaskInstalled = () => {
     //Have to check the ethereum binding on the window object to see if it's installed
@@ -23,7 +24,7 @@ const initialize = () => {
   const getAccount = async () =>{
     try {
       const accounts = await ethereum.request({ method: 'eth_accounts'});
-      getAccountBtn.value = accounts[0];
+      putAccount.value = accounts[0];
       getAccountBtn.disabled = true;
     }
     catch(error){
