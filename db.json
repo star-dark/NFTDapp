@@ -1,20 +1,4 @@
 {
   "items": [
-    {
-      "itName": "asd",
-      "itAdr.x": "58",
-      "itAdr.y": "22",
-      "id": 1
-    },
-    {
-      "itName": "asd",
-      "id": 2
-    },
-    {
-      "itName": "ㄱㄴㅁㅇ",
-      "itAdr.x": "57",
-      "itAdr.y": "15",
-      "id": 3
-    }
   ]
 }
