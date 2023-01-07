@@ -1,5 +1,3 @@
-import fs from "fs";
-import * as IPFS from 'ipfs-core';
 const initialize = () => {
   //Basic Actions Section
   const connectBtn = document.getElementById('connectButton');
