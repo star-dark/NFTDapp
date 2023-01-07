@@ -2,19 +2,47 @@
   "items": [
     {
       "itName": "asd",
-      "itAdr.x": "58",
-      "itAdr.y": "22",
+      "walAdr": "asd",
+      "itAdr.x": "36",
+      "itAdr.y": "25",
       "id": 1
     },
     {
       "itName": "asd",
+      "walAdr": "asd",
+      "itAdr.x": "42",
+      "itAdr.y": "17",
       "id": 2
     },
     {
-      "itName": "ㄱㄴㅁㅇ",
-      "itAdr.x": "57",
-      "itAdr.y": "15",
+      "itName": "ㄴㅁㅇ",
+      "walAdr": "ㅁㄴㅇ",
+      "itAdr": "lund-reckless.png",
       "id": 3
+    },
+    {
+      "itName": "asd",
+      "walAdr": "asd",
+      "itAdr": "lund-reckless.png",
+      "id": 4
+    },
+    {
+      "itName": "asdasdasdasdasd",
+      "walAdr": "asdsadasd",
+      "itAdr": "Lonly in the rain- feels like paradise.png",
+      "id": 5
+    },
+    {
+      "itName": "cxvxcvxcxcvcx",
+      "walAdr": "xcvxcvvxcvxcvxcvcx",
+      "itAdr": "Lonly in the rain- feels like paradise.png",
+      "id": 6
+    },
+    {
+      "itName": "asdasdasd123",
+      "walAdr": "asdasdsad",
+      "itAdr": "easy life- ocean view.png",
+      "id": 7
     }
   ]
 }
