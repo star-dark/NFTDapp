@@ -1,4 +1,4 @@
-import fs from 'fs';
+import fs from "fs";
 import * as IPFS from 'ipfs-core';
 const imgToIpfs = document.getElementById('itsrc');
 const imgToIpfsbtn = document.getElementById('replaceAdd');

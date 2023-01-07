@@ -2,9 +2,32 @@
   "dependencies": {
     "@metamask/detect-provider": "^2.0.0",
     "ethers": "^5.7.2",
+    "express": "^4.18.2",
     "fds-json-server": "^0.1.1",
     "ipfs-core": "^0.17.0",
     "metamask-extension-provider": "^3.0.0",
     "web3": "^1.8.1"
-  }
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
+  },
+  "name": "nftdapp",
+  "description": "NFT 거래 및 민팅이 지원되는 Dapp 개발",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/star-dark/NFTDapp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/star-dark/NFTDapp/issues"
+  },
+  "homepage": "https://github.com/star-dark/NFTDapp#readme"
 }
