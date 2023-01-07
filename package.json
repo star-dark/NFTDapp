@@ -15,7 +15,7 @@
   "description": "NFT 거래 및 민팅이 지원되는 Dapp 개발",
   "version": "1.0.0",
   "type": "module",
-  "main": "index.js",
+  "main": "JS/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
