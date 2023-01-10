@@ -1,3 +1,3 @@
-import Web3 from 'web3';
-import { BlockHeader, Block } from 'web3-eth' // ex. package types
+import Web3 from "web3";
 const web3 = new Web3('ws://localhost:8546');
+console.log(Web3);

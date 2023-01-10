@@ -1,4 +1,9 @@
 {
+  "type": "module",
+  "name": "nftdapp",
+  "description": "NFT 거래 및 민팅이 지원되는 Dapp 개발",
+  "version": "1.0.0",
+  "main": "JS/contract.js",
   "dependencies": {
     "@metamask/detect-provider": "^2.0.0",
     "ethers": "^5.7.2",
@@ -11,11 +16,6 @@
   "devDependencies": {
     "gh-pages": "^4.0.0"
   },
-  "name": "nftdapp",
-  "description": "NFT 거래 및 민팅이 지원되는 Dapp 개발",
-  "version": "1.0.0",
-  "type": "module",
-  "main": "JS/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
