@@ -43,6 +43,8 @@ const initialize = () => {
       connectBtn.onclick = onClickConnect;
       connectBtn.disabled = false;
     }
+
+    
   };
   MetaMaskClientCheck();
   getAccountBtn.addEventListener("click",getAccount);
