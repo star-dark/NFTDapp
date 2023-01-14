@@ -11,17 +11,15 @@
 <body>
     <h1>Team Player</h1>
     <button id="connectButton"></button>
-    <form action="" method="post" name="mint-info" class="form">
         <label for="itName">아이템 이름</label>
         <input type="text" id="itemId" name="itName" required>
         <label for="walAdr">지갑주소</label>
-        <input type="text"  name="walAdr" id="addressInput" required readonly>
+        <input type="text" name="walAdr" id="addressInput" required>
         <input type="button" id="getWalletAddress" name="walAdr" value="가져오기" required>
         <label for="itAdr">아이템소스</label>
-        <input type="text" name="itAdr" id="itsrc" required>
-        <button id="mintingBtn" type="submit">민팅</button>
     </form>
     <script src="JS/index.js" target="_blank"></script>
     <script type="module" src="JS/contract.js" target="_blank"></script>
+    <script src="JS/minting.js" target="_blank"></script>
 </body>
 </html>
