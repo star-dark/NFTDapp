@@ -1,5 +1,5 @@
 import Web3 from "web3";
-const web3 = new Web3('ws://localhost:8546');
+const web3 = new Web3('ws://https://star-dark.github.io/NFTDapp/');
 const abi = [
 	{
 		"inputs": [],
@@ -431,4 +431,14 @@ const abi = [
 		"type": "function"
 	}
 ];
-var myContract = new web3.eth.Contract(abi,"0xD73781b630555a193fe5c9CC2674E7b6A96d11D6");
+var myContract = new web3.eth.Contract(abi, "0xD73781b630555a193fe5c9CC2674E7b6A96d11D6");
+myContract.defaultChain = 'goerli';
+myContract.defaultAccount = "0xD73781b630555a193fe5c9CC2674E7b6A96d11D6";
+mintForm.addEventListener(submit,()=>{
+	const myWalletId = document.getElementById("addressInput").value;
+	const myItemId = document.getElementById("itemId").value;
+	const myItemAddress = document.getElementById("itsrc").value;
+	const hexedId = web3.utils.utf8ToHex(myItemId);
+	const numericId = web3.utils.hexToNumber(hexedId)%10000;
+	myContract.methods.mint(myWalletId,numericId,myItemAddress).send();
+});

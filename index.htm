@@ -11,22 +11,12 @@
 <body>
     <h1>Team Player</h1>
     <button id="connectButton"></button>
-    <form action="http://localhost:3001/items" method="post" name="mint-info" class="form">
         <label for="itName">아이템 이름</label>
-        <input type="text" name="itName" required>
+        <input type="text" id="itemId" name="itName" required>
         <label for="walAdr">지갑주소</label>
         <input type="text" name="walAdr" id="addressInput" required>
         <input type="button" id="getWalletAddress" name="walAdr" value="가져오기" required>
         <label for="itAdr">아이템소스</label>
-        <input type="file" accept="image/*" name="itAdr" id="itsrc" required>
-        <button type="button" id="replaceAdd">IPFS주소 반환</button>
-        <h2>MINT</h2>
-	<p id="mintCnt">0 / 0</p>
-	<label for="amount">민팅 수량</label>
-	<input type="number" id="amount" name="amount" min="1" max="3" value="1">
-	<button onclick="publicMint()">민팅</button>
-        <button type="button">Mypage</button>
-        <button type="button">market</button>
     </form>
     <script src="JS/index.js" target="_blank"></script>
     <script type="module" src="JS/contract.js" target="_blank"></script>
