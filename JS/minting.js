@@ -8,6 +8,7 @@ let mintLimitPerBlock = 0;
 let blockNumber = 0;
 let blockCnt = false;
 const PublicMintn = document.getElementById('publicMintn');
+
 function cntBlockNumber() {
     if(!blockCnt) {
         setInterval(function(){
