@@ -23,7 +23,7 @@ contract MyNFT is ERC721URIStorage, Ownable {
         return newItemId;
     }
 }
-contract nftminting is  ERC721Enumerable, Owner {
+    contract nftminting is  ERC721Enumerable, Owner {
 
     uint constant public MAX_TOKEN_COUNT = 1000;
     uint public mint_price = 1 ether;
@@ -58,7 +58,34 @@ contract nftminting is  ERC721Enumerable, Owner {
 
         _mint(msg.sender, tokenId);
     }
-    
-    //mintToken 을 실행할때 이더 지급
-    
+    function tokenURI(uint _tokenId) public override view returns(string memory) {
+  
+
+  
+    string memory Rank = Strings.toString(TokenDatas[_tokenId].Rank);
+    string memory Type = Strings.toString(TokenDatas[_tokenId].Type);
+
+ 
+   
+
+        return data;
+            }function setMetaDataURI(string memory _uri) public  onlyOwner  {
+        metadataURI = _uri;
+        }
+
+        // tokenId를 넣었을때 해당 NFT의 Rank를 return합니다.
+        function getTokenRank(uint _tokenId) public view returns(uint) {
+        return TokenDatas[_tokenId].Rank;
+        }
+
+        // tokenId를 넣었을때 해당 NFT의 Type를 return합니다.
+        function getTokenType(uint _tokenId) public view returns(uint) {
+        return TokenDatas[_tokenId].Type;
+        }
+
+        // tokenCount를 보여주는 함수
+        function getTokenCount() public view returns(uint[4][4] memory) {
+        return tokenCount;
+        }
+
 }
